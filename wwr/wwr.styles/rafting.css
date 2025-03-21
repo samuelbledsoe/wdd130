@@ -116,20 +116,3 @@ footer a img {
   text-decoration: none;
   border: none;
 }
-
-/* Optional: Stack hero for small screens */
-@media (max-width: 600px) {
-
-  .hero h1,
-  .hero article {
-    position: static;
-    background-color: transparent;
-    color: var(--primary-color);
-  }
-
-  .hero article img {
-    float: none;
-    display: block;
-    margin: 0 auto 10px;
-  }
-}
