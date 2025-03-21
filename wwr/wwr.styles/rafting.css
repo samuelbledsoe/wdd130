@@ -1,0 +1,135 @@
+:root {
+  --primary-color: #000080;
+  --secondary-color: #ffffff;
+  --accent1-color: #228b22;
+  --accent2-color: #ff4f00;
+  --heading-font: 'Bebas Neue', sans-serif;
+  --text-font: 'Open Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--text-font);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1,
+h2 {
+  font-family: var(--heading-font);
+  color: var(--accent1-color);
+}
+
+a {
+  color: var(--accent2-color);
+}
+
+/* Header logo and nav layout (optional basic structure) */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+header img {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  max-width: 400px;
+}
+
+.hero article img {
+  float: right;
+  width: 100px;
+  margin-left: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f2f2f2;
+  margin-top: auto;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+}
+
+/* Resize and center social icons */
+footer a img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  vertical-align: middle;
+  text-decoration: none;
+  border: none;
+}
+
+/* Optional: Stack hero for small screens */
+@media (max-width: 600px) {
+
+  .hero h1,
+  .hero article {
+    position: static;
+    background-color: transparent;
+    color: var(--primary-color);
+  }
+
+  .hero article img {
+    float: none;
+    display: block;
+    margin: 0 auto 10px;
+  }
+}
