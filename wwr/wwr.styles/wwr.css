@@ -1,0 +1,67 @@
+:root {
+    --primary-color: #000080;
+    --secondary-color: #ffffff;
+    --accent1-color: #228b22;
+    --accent2-color: #ff4f00;
+    --heading-font: 'Bebas Neue', sans-serif;
+    --text-font: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: var(--text-font);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+}
+
+a {
+    color: var(--accent2-color);
+}
+
+/* Remove underline from social icons only */
+footer a img {
+    text-decoration: none;
+    border: none;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.hero article img {
+    float: right;
+    width: 100px;
+    margin-left: 10px;
+}
