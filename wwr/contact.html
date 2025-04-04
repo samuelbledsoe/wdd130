@@ -79,19 +79,25 @@
 
           <p>Purpose of message:</p>
             <div class="form-options">
-              <label>
-                <input type="radio" name="purpose" value="general" required>
+              <label for="purpose-general">
+                <input type="radio" id="purpose-general" name="purpose" value="general" required>
                 General Inquiry
               </label>
-              <label>
-                <input type="radio" name="purpose" value="reservation">
+
+              <label for="purpose-reservation">
+                <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
                 Reservation Question
               </label>
-              <label>
-                <input type="radio" name="purpose" value="suggestion">
+
+              <label for="purpose-suggestion">
+                <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">
                 Website Suggestion
               </label>
             </div>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
 
           <button type="submit">Send Message</button>
           <label class="checkbox-label">
