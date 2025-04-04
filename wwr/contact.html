@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Samuel Bledsoe" />
-    <meta name="description" content="Contact Splash White Water Rafting with any questions, feedback, or reservation requests." />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuel Bledsoe">
+    <meta name="description" content="Contact Splash White Water Rafting with any questions, feedback, or reservation requests.">
     <title>Contact Us - Splash White Water Rafting</title>
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="styles/rafting.css" />
+    <link rel="stylesheet" href="styles/rafting.css">
   </head>
   <body>
     <header>
-      <img src="images/logo.png" alt="Splash White Water Rafting Logo" />
+      <img src="images/logo.png" alt="Splash White Water Rafting Logo">
       <h1>Splash White Water Rafting</h1>
       <nav>
         <ul>
@@ -47,22 +47,21 @@
             referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>
-        
       </section>
 
       <section class="employee-profiles">
         <h3>Meet Our Team</h3>
         <div class="profiles">
           <figure>
-            <img src="images/employee1.jpg" alt="Emily - Lead Guide" />
+            <img src="images/employee1.jpg" alt="Emily - Lead Guide">
             <figcaption>Emily – Lead Guide</figcaption>
           </figure>
           <figure>
-            <img src="images/employee2.jpg" alt="Jake - Customer Experience" />
+            <img src="images/employee2.jpg" alt="Jake - Customer Experience">
             <figcaption>Jake – Customer Experience</figcaption>
           </figure>
           <figure>
-            <img src="images/employee3.jpg" alt="Sofia - Safety Officer" />
+            <img src="images/employee3.jpg" alt="Sofia - Safety Officer">
             <figcaption>Sofia – Safety Officer</figcaption>
           </figure>
         </div>
@@ -72,23 +71,26 @@
         <h3>Send Us a Message</h3>
         <form>
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
+          <input type="text" id="name" name="name" required>
 
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
+          <input type="email" id="email" name="email" required>
 
           <p>Purpose of message:</p>
-          <label><input type="radio" name="purpose" value="general" required /> General Inquiry</label><br />
-          <label><input type="radio" name="purpose" value="reservation" /> Reservation Question</label><br />
-          <label><input type="radio" name="purpose" value="suggestion" /> Website Suggestion</label><br />
+          <input type="radio" id="general" name="purpose" value="general" required>
+          <label for="general">General Inquiry</label><br>
+
+          <input type="radio" id="reservation" name="purpose" value="reservation">
+          <label for="reservation">Reservation Question</label><br>
+
+          <input type="radio" id="suggestion" name="purpose" value="suggestion">
+          <label for="suggestion">Website Suggestion</label><br>
 
           <label for="message">Message:</label>
           <textarea id="message" name="message" rows="6" required></textarea>
 
-          <label>
-            <input type="checkbox" name="subscribe" />
-            Please subscribe me to the monthly newsletter
-          </label>
+          <input type="checkbox" id="subscribe" name="subscribe">
+          <label for="subscribe">Please subscribe me to the monthly newsletter</label>
 
           <button type="submit">Send Message</button>
         </form>
@@ -98,9 +100,9 @@
     <footer>
       <p>&copy; 2025 Splash White Water Rafting | Samuel Bledsoe</p>
       <div class="social">
-        <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
-        <a href="#"><img src="images/x.png" alt="X" /></a>
-        <a href="#"><img src="images/instagram.png" alt="Instagram" /></a>
+        <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="images/x.png" alt="X"></a>
+        <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
       </div>
       <p><a href="https://app.moqups.com/W6xcMA91ZbflRhFe0cQ31lOdsKGikwxc/view/page/a55109832" target="_blank">View Wireframe</a></p>
     </footer>
