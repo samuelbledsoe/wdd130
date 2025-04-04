@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Samuel Bledsoe" />
+    <meta name="description" content="Contact Splash White Water Rafting with any questions, feedback, or reservation requests." />
+    <title>Contact Us - Splash White Water Rafting</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/rafting.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.png" alt="Splash White Water Rafting Logo" />
+      <h1>Splash White Water Rafting</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="trips.html">Trips</a></li>
+          <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Contact Us</h2>
+
+      <section class="contact-info">
+        <h3>Company Information</h3>
+        <p><strong>Address:</strong> 123 River Road, Rapidsville, CO 80401</p>
+        <p><strong>Phone:</strong> (800) 555-RAFT (7238)</p>
+        <p><strong>Email:</strong> contact@splashrafting.com</p>
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d786693.8870118114!2d-106.83832226934793!3d39.626680341535064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1743748142701!5m2!1sen!2sus" 
+            width="100%" 
+            height="300" 
+            allowfullscreen 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        
+      </section>
+
+      <section class="employee-profiles">
+        <h3>Meet Our Team</h3>
+        <div class="profiles">
+          <figure>
+            <img src="images/employee1.jpg" alt="Emily - Lead Guide" />
+            <figcaption>Emily – Lead Guide</figcaption>
+          </figure>
+          <figure>
+            <img src="images/employee2.jpg" alt="Jake - Customer Experience" />
+            <figcaption>Jake – Customer Experience</figcaption>
+          </figure>
+          <figure>
+            <img src="images/employee3.jpg" alt="Sofia - Safety Officer" />
+            <figcaption>Sofia – Safety Officer</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="contact-form">
+        <h3>Send Us a Message</h3>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <p>Purpose of message:</p>
+          <label><input type="radio" name="purpose" value="general" required /> General Inquiry</label><br />
+          <label><input type="radio" name="purpose" value="reservation" /> Reservation Question</label><br />
+          <label><input type="radio" name="purpose" value="suggestion" /> Website Suggestion</label><br />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+
+          <label>
+            <input type="checkbox" name="subscribe" />
+            Please subscribe me to the monthly newsletter
+          </label>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Splash White Water Rafting | Samuel Bledsoe</p>
+      <div class="social">
+        <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="images/x.png" alt="X" /></a>
+        <a href="#"><img src="images/instagram.png" alt="Instagram" /></a>
+      </div>
+      <p><a href="https://app.moqups.com/W6xcMA91ZbflRhFe0cQ31lOdsKGikwxc/view/page/a55109832" target="_blank">View Wireframe</a></p>
+    </footer>
+  </body>
+</html>
