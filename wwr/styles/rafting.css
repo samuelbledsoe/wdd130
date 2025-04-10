@@ -192,7 +192,8 @@ main h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 0 1 200px; /* Lock width for uniform layout */
+  flex: 0 1 200px;
+  /* Lock width for uniform layout */
 }
 
 .employee-profiles img {
@@ -348,7 +349,7 @@ footer a {
   background-color: #f8f8f8;
   padding: 1.5rem;
   border-radius: 6px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .intro h3,
@@ -421,7 +422,7 @@ footer a {
   background-color: #f8f8f8;
   padding: 1.5rem;
   border-radius: 6px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
