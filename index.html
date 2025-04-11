@@ -1,37 +1,70 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samuel Bledsoe | WDD 130</title>
-    <meta name="description" content="Samuel Bledsoe - WDD 130 Home Page - Web Development Course">
-    <meta name="author" content="Samuel Bledsoe">
-    <link rel="stylesheet" href="styles/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Samuel Bledsoe">
+  <meta name="description" content="Welcome to Splash White Water Rafting — your adventure starts here. Explore trips, meet the team, and sign up for our newsletter.">
+  <title>Home - Splash White Water Rafting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
-
 <body>
-    <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="wwr/home.html">Rafting Website</a>
-        </nav>
-    </header>
-    <main>
-        <h1>Samuel Bledsoe | WDD 130</h1>
-        <img src="images/profile.webp" alt="Hello, my name is Samuel Bledsoe" width="200">
-        <p>Hello, my name is Samuel Bledsoe. I am from southern Illinois. I love learning about software development and
-            programming. I enjoy learning and spending time with my family. I'm always trying to improve myself and be
-            the best I can!</p>
-    </main>
-    <aside>
-        <h2>Illinois</h2>
-        <img src="images/abraham-lincoln-w02.jpg" alt="Illinois" width="200">
-        <p>Illinois is a beautiful state full of fields and natural beauty. We experience all of the seasons to their extreme. One of the most famous historical figures in my state is Abraham Lincoln, the 16th president of the United States.</p>
-    </aside>
-    <footer>
-        <p>©2025, Samuel Bledsoe, Illinois, USA</p>
-    </footer>
-</body>
+  <header>
+    <img src="images/logo.png" alt="Splash White Water Rafting Logo">
+    <h1>Splash White Water Rafting</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main class="home-grid">
+    <section class="hero">
+      <img src="images/hero.jpg" alt="Rafting Adventure Hero Image">
+      <h2>Adventure Starts Here</h2>
+    </section>
+
+    <section class="intro">
+      <h3>Why Choose Splash?</h3>
+      <img src="images/rafting1.jpg" alt="Smiling Rafters">
+      <p>Experience the thrill of the river with professional guides and unmatched scenery. Your adventure begins here!</p>
+      <a href="trips.html" class="cta-button">Explore Our Trips</a>
+    </section>
+
+    <section class="mission">
+      <h3>Our Mission</h3>
+      <img src="images/rafting2.jpg" alt="River Rapids">
+      <p>We aim to make every rafting trip safe, exciting, and memorable for you and your family or friends.</p>
+    </section>
+
+    <section class="newsletter">
+      <h3>Join Our Newsletter</h3>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Splash White Water Rafting | Samuel Bledsoe</p>
+    <div class="social">
+      <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="images/x.png" alt="X"></a>
+      <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+    </div>
+  </footer>
+</body>
 </html>

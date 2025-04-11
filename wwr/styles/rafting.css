@@ -310,14 +310,95 @@ footer a {
   font-size: 0.9rem;
 }
 
+:root {
+  --primary-color: #000080; /* Navy Blue */
+  --secondary-color: #ffffff;
+  --heading-font: 'Bebas Neue', sans-serif;
+  --text-font: 'Open Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--text-font);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Header */
+header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr; /* Makes h1 center */
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--secondary-color);
+}
+
+header img {
+  grid-column: 1 / 2;
+  justify-self: start;
+}
+
+header h1 {
+  font-family: var(--heading-font);
+  font-size: 2rem;
+  color: var(--primary-color);
+  text-align: center;
+  grid-column: 2 / 3; /* Middle column */
+}
+
+header nav {
+  grid-column: 3 / 4;
+  justify-self: end;
+}
+
+
+/* Hero Section */
+.hero {
+  position: relative;
+  grid-column: 1 / -1;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.hero h2 {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  color: white;
+  font-family: var(--heading-font);
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+/* Home Grid Layout */
 .home-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
   padding: 2rem;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
+  justify-content: center; /* Ensures center alignment */
 }
 
 .hero {
@@ -328,7 +409,6 @@ footer a {
 .hero img {
   width: 100%;
   height: auto;
-  display: block;
   border-radius: 8px;
 }
 
@@ -346,33 +426,30 @@ footer a {
 
 .intro,
 .newsletter {
-  background-color: #f8f8f8;
+  background-color: #f9f9f9;
   padding: 1.5rem;
   border-radius: 6px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  /* No max-width here */
 }
 
-.intro h3,
-.newsletter h3 {
+.intro h3, .newsletter h3 {
   font-family: var(--heading-font);
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
 }
 
-.cta-button {
-  display: inline-block;
-  margin-top: 1rem;
+.cta-button,
+.newsletter button {
   background-color: var(--primary-color);
   color: white;
-  padding: 0.5rem 1.25rem;
+  padding: 0.6rem 1rem;
+  border: none;
   border-radius: 4px;
-  text-decoration: none;
   font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: var(--accent2-color);
+  cursor: pointer;
+  margin-top: 1rem;
+  display: inline-block;
 }
 
 .newsletter form {
@@ -381,25 +458,42 @@ footer a {
   gap: 0.5rem;
 }
 
+.newsletter input[type="text"],
 .newsletter input[type="email"] {
   padding: 0.5rem;
-  font-size: 1rem;
   border-radius: 4px;
   border: 1px solid #ccc;
+  font-size: 1rem;
 }
 
-.newsletter button {
-  background-color: var(--primary-color);
-  color: white;
-  border: none;
-  padding: 0.6rem;
-  border-radius: 4px;
-  cursor: pointer;
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f2f2f2;
+  margin-top: auto;
 }
 
-.newsletter button:hover {
-  background-color: var(--accent2-color);
+footer .social {
+  display: flex;
+  gap: 1rem;
+  margin: 0.5rem 0;
 }
+
+footer .social a img {
+  width: 30px;
+  height: 30px;
+}
+
+footer a {
+  color: var(--primary-color);
+  text-decoration: underline;
+  font-size: 0.9rem;
+}
+
 
 .trips-grid {
   display: grid;
