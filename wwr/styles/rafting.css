@@ -529,8 +529,8 @@ img {
 
 /* Header & Nav */
 header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr; /* Makes h1 center */
   align-items: center;
   padding: 1rem;
   background-color: var(--secondary-color);
@@ -540,22 +540,6 @@ header h1 {
   font-family: var(--heading-font);
   font-size: 1.5rem;
   color: var(--primary-color);
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: var(--primary-color);
-  font-weight: bold;
-}
-
-nav ul li a.active {
-  text-decoration: underline;
 }
 
 /* Main Layout */
@@ -575,10 +559,11 @@ main h2 {
 
 /* Trip Grid */
 .trip-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  justify-content: center;
   gap: 2rem;
   margin-bottom: 3rem;
+  flex-wrap: nowrap;
 }
 
 .trip {
